@@ -142,7 +142,7 @@ class Connect():
             self.wifi_flg = False
             self.mqtt_flg = False
             self.mqtt_blink_search()
-            self.connect(False)
+            self.connect(True)
             self.mqtt_blink_err()            
             if self.wifi_state != None: await self.wifi_state(stat) 
 
